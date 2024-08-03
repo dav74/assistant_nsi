@@ -13,7 +13,7 @@ Settings.embed_model = embed_model
 storage_context = StorageContext.from_defaults(persist_dir='./index_storage')
 vector_index = load_index_from_storage(storage_context)
 st.set_page_config(page_title="ASSISTANT NSI (première et terminale)", layout="centered", initial_sidebar_state="auto", menu_items=None)
-st.title("Assistant NSI")
+st.title("Assistant NSI (version du 03/08/2024)")
 st.info("Cet assistant vous permet de réviser le cours et faire des exercices.")
 if "messages" not in st.session_state.keys(): 
     st.session_state.messages = [
